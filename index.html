@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ToDoList</title>
+</head>
+<body>
+    <section class="login">
+        <h1>Welcome! What's your name?</h1>
+        <div class="login-input">
+            <form class="hidden" id="login-form"> 
+                <input required maxlength="15" id="input_1" type="text" 
+                placeholder="What is your name?" />
+                <input type="submit" id="input_2" value="Log In" />
+            </form>
+        </div>
+    </section>
+
+    <div class="mainPage hidden">
+        <h1 id="greeting"></h1>
+
+        <div class="clock hidden">
+            <p class="time">00:00:00</p>
+        </div>
+
+        <section class="todo">
+            <form id="todo-form">
+                <input type="text" required placeholder="Write a Todo and Press Enter"/>
+            </form>
+            <ul id="todo-list"></ul>
+        </section>
+    </div>
+
+    <div class="more-info hidden">
+        <p class="location"></p>
+        <p class="weather"></p>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/time.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+</html>
